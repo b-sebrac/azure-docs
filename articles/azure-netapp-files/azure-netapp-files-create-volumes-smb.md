@@ -218,6 +218,22 @@ This setting is configured in the **Active Directory Connections** under **NetAp
  
     A volume inherits subscription, resource group, location attributes from its capacity pool. To monitor the volume deployment status, you can use the Notifications tab.
 
+## Setting permissions on the SMB volume
+
+### Share Permissions
+
+New volume get the Everyone / Full Control Share permission by default This share permission can be changed using the Computer Management on the Computer account that is used for the Azure NetApp Files Volume.
+
+![Smb_mount_path](../media/azure-netapp-files/azure-netapp-files-smb-mount-path.png)
+
+![Set_share_permissions](../media/azure-netapp-files/azure-netapp-files-set-share-permissions.png)
+
+### NTFS files/folder permissions
+
+Using the Windows SMB Client the permissions for a file and/or folder can be set using the Security Tab in the object's properties.
+
+![Set_file_folder_permissions](../media/azure-netapp-files/azure-netapp-files-set-file-folder-permissions.png)
+
 ## Next steps  
 
 * [Mount or unmount a volume for Windows or Linux virtual machines](azure-netapp-files-mount-unmount-volumes-for-virtual-machines.md)
